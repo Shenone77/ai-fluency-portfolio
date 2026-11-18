@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Shenone77’s machine learning portfolio. Read a FlyRank time-holdout study and try its search-decline rule.">
+<meta property="og:title" content="Shenone77 · Machine Learning Portfolio">
+<meta property="og:description" content="Which pages belong in an editorial review queue? A time-holdout study with a working decline-rule demo.">
+<title>Shenone77 · Machine Learning Portfolio</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="stylesheet" href="styles.css">
+<script src="checker.js" type="module"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="mast shell">
+  <a class="brand" href="./">Shenone77<span>.</span></a>
+  <nav aria-label="Portfolio sections"><a href="#work">Case study</a><a href="#checker">Try the checker</a><a href="#about">About</a></nav>
+  <a class="nav-action" href="https://shenone77.github.io/flyrank-ml-internship/">Read the research <span aria-hidden="true">↗</span></a>
+</header>
+<main id="main">
+  <section class="hero shell" aria-labelledby="hero-title">
+    <div>
+      <p class="label">Machine learning portfolio</p>
+      <h1 id="hero-title">Build models around the decision.</h1>
+      <p class="lede">My FlyRank case study asks a practical question. With ten review slots per client, which pages should an editor check for a drop in search visibility?</p>
+      <a class="button" href="https://shenone77.github.io/flyrank-ml-internship/">Read the research <span aria-hidden="true">↗</span></a>
+    </div>
+    <figure class="result">
+      <div class="result-header"><span>June holdout</span><span>32 clients</span></div>
+      <h2>Useful picks in ten review slots</h2>
+      <div class="bar-row"><span>Logistic ranking</span><strong>68.1%</strong><div class="bar" aria-hidden="true"><i style="--size:68.125%"></i></div></div>
+      <div class="bar-row"><span>Exposure rule</span><strong>32.2%</strong><div class="bar" aria-hidden="true"><i class="rule" style="--size:32.1875%"></i></div></div>
+      <figcaption>Mean Precision@10. Each client contributes equally.</figcaption>
+    </figure>
+  </section>
+  <section id="work" class="section shell" aria-labelledby="work-title">
+    <p class="label">Selected work</p><h2 id="work-title">Catching material search declines</h2>
+    <div class="three">
+      <article><h3>Problem</h3><p>Editors can check only a few pages per client. A visibility drop is worth investigating when the relative change and the absolute loss are both meaningful.</p></article>
+      <article><h3>What I worked on</h3><p>For my FlyRank ML capstone, I used Codex as a build partner to implement a time-separated evaluation and publish the reproducible analysis. The study compares a logistic ranker and a fixed exposure rule on the same June pages.</p></article>
+      <article><h3>What came of it</h3><p>The ranker found 218 material drops in 320 review slots. The rule found 103. In the pooled top 50, the rule’s hits covered more lost impressions. The full paper shows both measures.</p></article>
+    </div>
+    <div class="evidence-links"><a href="https://shenone77.github.io/flyrank-ml-internship/">Read the full case study ↗</a><a href="https://github.com/Shenone77/flyrank-ml-internship/blob/main/work/notebooks/capstone.ipynb">Open the executed notebook ↗</a></div>
+  </section>
+  <section id="checker" class="section shell demo" aria-labelledby="checker-title">
+    <div><p class="label">Try the research rule</p><h2 id="checker-title">Search-decline checker</h2><p>Enter two 30-day impression counts to see whether the study would label that change a material decline.</p><p class="fine">The starting counts are illustrative. The checker labels observed counts and makes no forecast.</p></div>
+    <div class="demo-panel">
+      <form id="decline-form" novalidate>
+        <div class="inputs">
+          <label for="prior">Prior 30 days<input id="prior" name="prior" inputmode="numeric" type="text" value="1000" autocomplete="off"></label>
+          <label for="following">Following 30 days<input id="following" name="following" inputmode="numeric" type="text" value="650" autocomplete="off"></label>
+        </div>
+        <button type="submit" class="button">Check decline</button>
+      </form>
+      <div class="check-result" aria-live="polite" aria-atomic="true"><p id="result-title">Enter two counts to check the rule.</p><p id="result-detail"></p></div>
+      <noscript><p>Enable JavaScript to run the checker.</p></noscript>
+    </div>
+  </section>
+  <section id="about" class="section shell about" aria-labelledby="about-title">
+    <div><p class="label">About</p><h2 id="about-title">Shenone77</h2></div>
+    <div><p>I’m building up my machine learning portfolio through FlyRank. This case looks at how evaluation changes when a real workflow has a limited number of decisions to make.</p><p>My next case will audit the ranker client by client against the exposure rule, including who benefits and which high-exposure losses are missed.</p><a href="https://shenone77.github.io/flyrank-ml-internship/">Read the research ↗</a></div>
+  </section>
+</main>
+<footer class="footer shell"><span>Shenone77</span><a href="https://github.com/Shenone77">GitHub ↗</a></footer>
+</body>
+</html>

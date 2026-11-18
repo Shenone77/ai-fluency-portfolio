@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="AI Fluency evidence for the Shenone77 machine learning portfolio.">
+<title>AI Fluency · Portfolio evidence</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="document">
+<p><a href="./">← Portfolio</a></p>
+<h1>AI Fluency evidence</h1>
+<nav aria-label="Evidence sections">
+<a href="#proof">Proof statement</a><a href="#identity">Identity kit</a><a href="#map">Content map</a><a href="#stack">Stack choice</a><a href="#feature">Working feature</a><a href="#capstone">Capstone plan</a>
+</nav>
+
+<section id="proof">
+<h2>What Are You Proving?</h2>
+<p>I can build a model evaluation around a real decision and show how the recommendation changes with the objective. The reader is an ML hiring manager reviewing entry-level candidates. I want them to open my FlyRank research case study and inspect how a ten-page budget per client changes which ranking I would use.</p>
+<p><strong>Why this needs to exist.</strong> A CV line can name logistic regression. The paper and notebook show the date split, the baseline, and the cases where higher precision still covered fewer lost impressions.</p>
+<p><strong>Decision from the interview.</strong> I chose an ML hiring manager as the reader and opening the research case study as the first action.</p>
+<a href="https://shenone77.github.io/flyrank-ml-internship/">Open the research case study ↗</a>
+</section>
+
+<section id="identity">
+<h2>Decide Once: Build Your Identity Kit</h2>
+<p><img src="favicon.png" width="56" height="56" alt="White S monogram on a violet square"></p>
+<div class="swatches" aria-label="Core palette">
+<span style="background:#40359f;color:#f5f4ef">Primary #40359F</span>
+<span style="background:#19202e;color:#f5f4ef">Ink #19202E</span>
+<span style="background:#f5f4ef">Paper #F5F4EF</span>
+<span style="background:#c9ead3">Accent #C9EAD3</span>
+</div>
+<p><strong>Style note.</strong> Use Bricolage Grotesque for headings and Instrument Sans for body text. Use Paper, Ink, Violet, and Mint consistently, with the S monogram as the favicon.</p>
+<p>Keep the page calm and practical so the figures, decisions, and source links carry the story.</p>
+</section>
+
+<section id="map">
+<h2>The Through-Line: Map Content &amp; CTAs</h2>
+<p><strong>One-line claim.</strong> Build models around the decision.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Page</th><th scope="col">Ordered sections</th><th scope="col">Case and next action</th></tr></thead><tbody>
+<tr><th scope="row">Portfolio home</th><td>Claim and result → case study → decline checker → about → source links</td><td>Lead with the ML capstone and send the hiring manager to the research paper.</td></tr>
+<tr><th scope="row">Research paper</th><td>Abstract → problem → data → method → results → limitations → actions → reproducibility</td><td>One complete case. The notebook link lets the reader verify the result.</td></tr>
+<tr><th scope="row">Course evidence</th><td>Proof → identity → content map → stack → working feature → capstone update plan</td><td>Reviewers can jump directly to their assignment and then open the same portfolio case.</td></tr>
+</tbody></table></div>
+<p><strong>Evidence on hand.</strong> The published ML paper, executed notebook, verified aggregate metrics, and local browser demo.</p>
+<p><strong>Still to gather.</strong> Public portfolio URL, a narrated run of the published checker, and the aggregate results from the planned client audit.</p>
+<details><summary>Headline options considered</summary><ol>
+<li>Build models around the decision.</li><li>Find the pages worth reviewing first.</li><li>Start with the editor’s ten slots.</li><li>Measure what the review queue gets right.</li><li>Test the ranking before shipping the queue.</li><li>Compare models on the same decision.</li><li>Make the review budget part of the metric.</li><li>Show where a model earns its place.</li><li>Trace a ranking from data to action.</li><li>Choose the metric the decision needs.</li>
+</ol><p>The first line is short enough for the homepage and broad enough to fit the next audit. The subheading makes the specific decision clear.</p></details>
+</section>
+
+<section id="stack">
+<h2>Three Roads: Choose Your Stack with AI</h2>
+<p>The portfolio needs readable case-study copy, links to notebook evidence, and one interactive checker. The build should use a free host, stay simple to update, and avoid storing visitor inputs.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Option</th><th scope="col">Build and host</th><th scope="col">Trade-off</th></tr></thead><tbody>
+<tr><th scope="row">No-code builder</th><td>Use a Carrd single page and its hosted URL. No backend for the basic page.</td><td>Quick for text and links. Adding and testing an interactive calculator is less straightforward than keeping the code in the repo.</td></tr>
+<tr><th scope="row">Static HTML, CSS, JavaScript</th><td>Host ordinary files on GitHub Pages. The checker runs in the browser.</td><td>Easy to show real evidence and maintain a simple feature. As the site grows, repeated markup may make adding cases slower.</td></tr>
+<tr><th scope="row">Static site framework</th><td>Build an Astro site and publish its generated static files on GitHub Pages. No backend is necessary at launch.</td><td>Useful templates for many cases, with an extra build step and dependencies to maintain.</td></tr>
+</tbody></table></div>
+<p><strong>Choice.</strong> Static HTML, CSS, and JavaScript. I can explain each file and add a case by editing a section and linking its evidence. The front-runner would need additional infrastructure if I later wanted a contact form that delivers messages or any stored data. The current portfolio displays the study and runs one local calculation, so there is no backend to maintain.</p>
+</section>
+
+<section id="feature">
+<h2>Make It Do Something</h2>
+<p><a href="./#checker">Run the search-decline checker</a>. The browser reads the two counts when the form is submitted. JavaScript checks the inputs, applies the study’s eligibility and material-loss thresholds, and updates the result below the form.</p>
+<p>A backend is a server that processes requests or holds shared data. This feature needs neither. The demo sends no impression counts to a server and applies the rule to example counts. It does not run the trained model.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Prior / following</th><th scope="col">Expected result</th></tr></thead><tbody>
+<tr><td>500 / 350</td><td>Qualifies at exactly 150 impressions and 30%</td></tr>
+<tr><td>501 / 351</td><td>Falls short of 30% despite losing 150 impressions</td></tr>
+<tr><td>299 / 0</td><td>Outside the study population</td></tr>
+<tr><td>Blank or decimal</td><td>Valid whole numbers requested</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="capstone">
+<h2>How to add the next case</h2>
+<p><strong>Next real piece.</strong> Audit my FlyRank model by client and against the exposure rule again.</p>
+<ol>
+<li>Add the new case after the current one in the Selected Work section of the portfolio homepage. Use the same three headings: Problem, What I worked on, and What came of it.</li>
+<li>In the audit, use the same candidate population and budget for both rankings. Check per-client Precision@10, where the methods disagree, and whether the biggest observed losses are covered. Flag clients with too few observable pages.</li>
+<li>Save the reproducible analysis and publish only aggregate evidence. Link the notebook or report, then check the case and links on desktop and a phone before sharing it.</li>
+</ol>
+<p><strong>Reminder.</strong> A reminder still needs to be set. Title it “Add the FlyRank client-by-client audit to my portfolio” and save evidence after it appears in the calendar or reminders app.</p>
+<p><strong>Build context.</strong> The project instructions for the claim, voice, stack, and identity kit are prepared separately. Saving them to an actual Claude Project is pending account access.</p>
+</section>
+</main>
+</body>
+</html>

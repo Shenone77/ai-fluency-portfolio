@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="How the Shenone77 ML portfolio and its decline-rule checker were built with AI assistance.">
+<title>Build story · Shenone77</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="document">
+<p><a href="./">← Portfolio</a></p>
+<p class="label">AI Fluency build story</p>
+<h1>From research paper to working example</h1>
+<p>The first piece of work in my portfolio is a FlyRank study about which pages an editor should review for a search visibility drop. I wanted an ML hiring manager to be able to open the research quickly, see exactly what was measured, and try one small part of the method. I used Codex to help turn the case into a web page and implement the calculation.</p>
+<p>The clearest result was the difference between the two review objectives. With ten slots per client, logistic ranking found more qualifying declines. A pooled exposure rule surfaced fewer declines while covering more total lost impressions. Both observations belong in the case because they lead to different decisions.</p>
+<p>The checker exposed a useful mistake. In one test, 10,000 impressions fell to 7,001. The result was below the 30% cutoff, but the display rounded the change to 30.0%. The calculation was correct and the explanation was unclear. The checker now labels rounded values and names the threshold it missed. The demo still checks only the outcome rule from two observed counts. It cannot predict the next month’s traffic.</p>
+<p>The next case will revisit the ranking client by client and examine where it disagrees with the exposure rule. I want to show whether the average hides a client that would be better served by the simpler baseline.</p>
+<p><a href="./#checker">Try the checker</a> · <a href="https://shenone77.github.io/flyrank-ml-internship/">Read the original study</a></p>
+</main>
+</body>
+</html>
